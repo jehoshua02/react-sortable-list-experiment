@@ -1,0 +1,30 @@
+{
+  "name": "react-sortable-list-experiment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Figuring out how to make sortable lists in React.",
+  "author": "\"Joshua Stoutenburg <jehoshua02@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
+    "html-webpack-plugin": "^1.5.2",
+    "webpack": "^1.9.13",
+    "node-libs-browser": "^0.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jehoshua02/react-sortable-list-experiment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jehoshua02/react-sortable-list-experiment/issues"
+  },
+  "homepage": "https://github.com/jehoshua02/react-sortable-list-experiment#readme"
+}
