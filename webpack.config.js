@@ -2,7 +2,7 @@ var path = require('path');
 var HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'sourcemap',
   entry: "./src/index",
   output: {
     path: "./build/",
