@@ -1,4 +1,6 @@
 import React from 'react';
+import {DragDropContext} from 'react-dnd';
+import HTML5DragDropBackend from 'react-dnd/modules/backends/HTML5';
 import SortableList from 'components/SortableList';
 import Item from 'components/Item';
 import genIdFactory from 'util/genIdFactory';
@@ -27,4 +29,4 @@ var App = React.createClass({
   }
 });
 
-export default App;
+export default DragDropContext(HTML5DragDropBackend)(App);
