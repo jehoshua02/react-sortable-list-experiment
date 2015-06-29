@@ -10,6 +10,7 @@
     "watch": "webpack -w"
   },
   "dependencies": {
+    "es5-shim": "^4.1.7",
     "react": "^0.13.3",
     "react-dnd": "^1.1.3"
   },

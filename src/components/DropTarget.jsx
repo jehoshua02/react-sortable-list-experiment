@@ -12,8 +12,8 @@ var DropTarget = React.createClass({
     hover: Type.func,
     canDrop: Type.func,
 
-    _connect: Type.instanceOf(DropTargetConnector).isRequired,
-    _monitor: Type.instanceOf(DropTargetMonitor).isRequired,
+    _connect: Type.object.isRequired,
+    _monitor: Type.object.isRequired,
   },
 
   render: function () {
@@ -22,7 +22,7 @@ var DropTarget = React.createClass({
   },
 
   _child: function () {
-    var child = React.Children.only(this.props.childen);
+    var child = React.Children.only(this.props.children);
     return React.addons.cloneWithProps(child, this._props());
   },
 
@@ -34,6 +34,7 @@ var DropTarget = React.createClass({
       canDrop,
       _connect,
       _monitor,
+      children,
       ...props
     } = this.props;
 
